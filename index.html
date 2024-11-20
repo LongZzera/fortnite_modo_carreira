@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Pro Player de Fortnite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Simulador de Pro Player de Fortnite</h1>
+  </header>
+
+  <main id="main-content">
+    <!-- Tela Inicial -->
+    <section id="career-selection">
+      <h2>Escolha sua Carreira</h2>
+      <button onclick="chooseCareer('tryHard')">Try Hard</button>
+      <button onclick="chooseCareer('contentCreator')">Criador de Conteúdo</button>
+    </section>
+
+    <!-- Ações de Try Hard -->
+    <section id="try-hard-actions" style="display: none;">
+      <h2>Ações - Try Hard</h2>
+      <button onclick="playRanked()">Partida Ranqueada</button>
+      <button onclick="train()">Treinar Habilidade</button>
+      <button onclick="enterTournament()">Entrar no Torneio</button>
+    </section>
+
+    <!-- Ações de Criador de Conteúdo -->
+    <section id="content-creator-actions" style="display: none;">
+      <h2>Ações - Criador de Conteúdo</h2>
+      <button onclick="playMatch()">Jogar Partida</button>
+      <button onclick="recordVideo()">Gravar Vídeo</button>
+      <button onclick="stream()">Gravar Live</button>
+      <button onclick="recordTikTok()">Gravar TikTok</button>
+    </section>
+
+    <!-- Estatísticas -->
+    <section id="stats" style="display: none;">
+      <h2>Estatísticas</h2>
+      <p>Vitórias: <span id="wins">0</span></p>
+      <p>Derrotas: <span id="losses">0</span></p>
+      <p>Pontos: <span id="points">0</span></p>
+      <p>Rank: <span id="rank">Bronze</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Simulador criado para jogadores de Fortnite.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
